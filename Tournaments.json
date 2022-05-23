@@ -1,0 +1,32 @@
+[
+  {
+    "tournament_name": "ESL One Stockholm Dota Major 2022",
+    "twitch_url": "https://www.twitch.tv/dota2mc",
+    "start_data": "now"
+  },
+  {
+    "tournament_name": "DPC EEU 2021/22 Tour 2: Division II Playoffs",
+    "twitch_url": "https://www.twitch.tv/dota2mc",
+    "start_data": "19 May 2022"
+  },
+  {
+    "tournament_name": "Winline Dota 2 Champions League Season 11",
+    "twitch_url": "https://www.twitch.tv/dota2mc",
+    "start_data": "23 May 2022"
+  },
+  {
+    "tournament_name": "DPC WEU 2021/2022 Tour 3: Closed qualifiers",
+    "twitch_url": "https://www.twitch.tv/dota2mc",
+    "start_data": "26 May 2022"
+  },
+  {
+    "tournament_name": "DPC NA 2021/2022 Tour 3: Closed qualifiers",
+    "twitch_url": "https://www.twitch.tv/dota2mc",
+    "start_data": "26 May 2022"
+  },
+  {
+    "tournament_name": "PGL Dota 2 Major Arlington 2022",
+    "twitch_url": "https://www.twitch.tv/dota2mc",
+    "start_data": "04 Aug 2022"
+  }
+]
