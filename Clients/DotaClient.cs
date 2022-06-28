@@ -51,64 +51,71 @@ namespace ApiTestCours.Clients
 
             var result = JsonConvert.DeserializeObject<List<Heroes>>(content);
             string[] HrName = Twohrnames.Split('&');
-
-            string Herolocalized_name1 = null;
-            string Heroattack_type1 = null;
-            float Herobase_health1 = 0;
-            float Herobase_health_regen1 = 0;
-            float Herobase_mana1 = 0;
-            float Herobase_mana_regen1 = 0;
-            float Herobase_armor1 = 0;
-            float Herobase_attack_min1 = 0;
-            float Herobase_attack_max1 = 0;
-
-            string Herolocalized_name2 = null;
-            string Heroattack_type2 = null;
-            float Herobase_health2 = 0;
-            float Herobase_health_regen2 = 0;
-            float Herobase_mana2 = 0;
-            float Herobase_mana_regen2 = 0;
-            float Herobase_armor2 = 0;
-            float Herobase_attack_min2 = 0;
-            float Herobase_attack_max2 = 0;
-            foreach (var hero in result)
+            if(HrName.Length == 2)
             {
-                if (hero.localized_name == HrName[0])
-                {
-                    Herolocalized_name1 = hero.localized_name;
-                    Heroattack_type1 = hero.attack_type;
-                    Herobase_health1 = hero.base_health;
-                    Herobase_health_regen1 = hero.base_health_regen;
-                    Herobase_mana1 = hero.base_mana;
-                    Herobase_mana_regen1 = hero.base_mana_regen;
-                    Herobase_armor1 = hero.base_armor;
-                    Herobase_attack_min1 = hero.base_attack_min;
-                    Herobase_attack_max1 = hero.base_attack_max;
-                }
-                else if (hero.localized_name == HrName[1])
-                {
-                    Herolocalized_name2 = hero.localized_name;
-                    Heroattack_type2 = hero.attack_type;
-                    Herobase_health2 = hero.base_health;
-                    Herobase_health_regen2 = hero.base_health_regen;
-                    Herobase_mana2 = hero.base_mana;
-                    Herobase_mana_regen2 = hero.base_mana_regen;
-                    Herobase_armor2 = hero.base_armor;
-                    Herobase_attack_min2 = hero.base_attack_min;
-                    Herobase_attack_max2 = hero.base_attack_max;
-                }
+                string Herolocalized_name1 = null;
+                string Heroattack_type1 = null;
+                float Herobase_health1 = 0;
+                float Herobase_health_regen1 = 0;
+                float Herobase_mana1 = 0;
+                float Herobase_mana_regen1 = 0;
+                float Herobase_armor1 = 0;
+                float Herobase_attack_min1 = 0;
+                float Herobase_attack_max1 = 0;
 
+                string Herolocalized_name2 = null;
+                string Heroattack_type2 = null;
+                float Herobase_health2 = 0;
+                float Herobase_health_regen2 = 0;
+                float Herobase_mana2 = 0;
+                float Herobase_mana_regen2 = 0;
+                float Herobase_armor2 = 0;
+                float Herobase_attack_min2 = 0;
+                float Herobase_attack_max2 = 0;
+                foreach (var hero in result)
+                {
+                    if (hero.localized_name == HrName[0])
+                    {
+                        Herolocalized_name1 = hero.localized_name;
+                        Heroattack_type1 = hero.attack_type;
+                        Herobase_health1 = hero.base_health;
+                        Herobase_health_regen1 = hero.base_health_regen;
+                        Herobase_mana1 = hero.base_mana;
+                        Herobase_mana_regen1 = hero.base_mana_regen;
+                        Herobase_armor1 = hero.base_armor;
+                        Herobase_attack_min1 = hero.base_attack_min;
+                        Herobase_attack_max1 = hero.base_attack_max;
+                    }
+                    else if (hero.localized_name == HrName[1])
+                    {
+                        Herolocalized_name2 = hero.localized_name;
+                        Heroattack_type2 = hero.attack_type;
+                        Herobase_health2 = hero.base_health;
+                        Herobase_health_regen2 = hero.base_health_regen;
+                        Herobase_mana2 = hero.base_mana;
+                        Herobase_mana_regen2 = hero.base_mana_regen;
+                        Herobase_armor2 = hero.base_armor;
+                        Herobase_attack_min2 = hero.base_attack_min;
+                        Herobase_attack_max2 = hero.base_attack_max;
+                    }
+
+                }
+                string compare = $"Назва:\t\t{Herolocalized_name1}\t\t{Herolocalized_name2}\r\n" +
+                                 $"Тип атаки:\t\t{Heroattack_type1}\t\t{Heroattack_type2}\r\n" +
+                                 $"Колово Здоров'я:\t\t{Herobase_health1}\t\t{Herobase_health2}\r\n" +
+                                 $"Реген Здоров'я:\t\t{Herobase_health_regen1}\t\t{Herobase_health_regen2}\r\n" +
+                                 $"Колово Мани:\t\t{Herobase_mana1}\t\t{Herobase_mana2}\r\n" +
+                                 $"Реген Мани:\t\t{Herobase_mana_regen1}\t\t{Herobase_mana_regen2}\r\n" +
+                                 $"Армор:\t\t{Herobase_armor1}\t\t{Herobase_armor2}\r\n" +
+                                 $"Мін дамаг:\t\t{Herobase_attack_min1}\t\t{Herobase_attack_min2}\r\n" +
+                                 $"Макс дамаг:\t\t{Herobase_attack_max1}\t\t{Herobase_attack_max2}\r\n";
+                return compare;
             }
-            string compare = $"Назва:\t\t{Herolocalized_name1}\t\t{Herolocalized_name2}\r\n" +
-                             $"Тип атаки:\t\t{Heroattack_type1}\t\t{Heroattack_type2}\r\n" +
-                             $"Колово Здоров'я:\t\t{Herobase_health1}\t\t{Herobase_health2}\r\n" +
-                             $"Реген Здоров'я:\t\t{Herobase_health_regen1}\t\t{Herobase_health_regen2}\r\n" +
-                             $"Колово Мани:\t\t{Herobase_mana1}\t\t{Herobase_mana2}\r\n" +
-                             $"Реген Мани:\t\t{Herobase_mana_regen1}\t\t{Herobase_mana_regen2}\r\n" +
-                             $"Армор:\t\t{Herobase_armor1}\t\t{Herobase_armor2}\r\n" +
-                             $"Мін дамаг:\t\t{Herobase_attack_min1}\t\t{Herobase_attack_min2}\r\n" +
-                             $"Макс дамаг:\t\t{Herobase_attack_max1}\t\t{Herobase_attack_max2}\r\n";
-            return compare;
+            else
+            {
+                return null;
+            }
+            
         }
 
         public async Task<DotaTeams> GetTeam(string teamName)
@@ -164,51 +171,6 @@ namespace ApiTestCours.Clients
                 i++;
             }
             return top;
-        }
-        public async Task<string> GetTeammatchesPast()
-        {
-            var responseProMatch = await _client.GetAsync($"api/proMatches");
-            responseProMatch.EnsureSuccessStatusCode();
-            var contentProMatch = responseProMatch.Content.ReadAsStringAsync().Result;
-            var resultProMatch = JsonConvert.DeserializeObject<List<ProMatches>>(contentProMatch);
-
-            var responseLiveMatch = await _client.GetAsync($"api/live");
-            responseLiveMatch.EnsureSuccessStatusCode();
-            var contentLiveMatch = responseLiveMatch.Content.ReadAsStringAsync().Result;
-            var resultLiveMatch = JsonConvert.DeserializeObject<List<LiveMatches>>(contentLiveMatch);
-            string TeamsSub = File.ReadAllText(_TeamNameSubFile);
-            string[] Arrteams = TeamsSub.Split("&");
-            List<string> TeamsList = new List<string>();
-            string StringProMatches = null;
-            string Win = null;
-            foreach (string teams in Arrteams)
-            {
-                TeamsList.Add(teams);
-            }
-            TeamsList.Remove("teams");
-            foreach (string teams in TeamsList)
-            {
-                foreach (var Promatch in resultProMatch)
-                {
-                    if ((teams == Promatch.dire_name) || (teams == Promatch.radiant_name))
-                    {
-                        if (Promatch.radiant_win = false)
-                        {
-                            Win = Promatch.dire_name;
-                        }
-                        else
-                        {
-                            Win = Promatch.radiant_name;
-                        }
-                        StringProMatches = $"{StringProMatches}\r\n" +
-                                           $"Match{teams}\r\n" +
-                                           $"Dire :{Promatch.dire_name}\t{Promatch.dire_score}\r\n" +
-                                           $"Radiant :{Promatch.radiant_name}\t{Promatch.radiant_score}\r\n" +
-                                           $"Win :{Win}\r\n";
-                    }
-                }
-            }
-            return StringProMatches;
         }
         public async Task<List<LiveMatches>> GetTeammatchesLive()
         {

@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "dgSpecHash": "+9fljK6OZE7FQQEKYYeI/9yqe4FyeatseB3G7nQcdo9ZDgL/cFYEGQNX1vwKN1Y9auMODL1Eewig+UHL9PR1qg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Zhad9l\\Projects\\ApiTestCours\\ApiTestCours.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\system.text.encodings.web\\6.0.0\\system.text.encodings.web.6.0.0.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\system.text.json\\6.0.4\\system.text.json.6.0.4.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\telegram\\1.0.1\\telegram.1.0.1.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\telegram.bot\\17.0.0\\telegram.bot.17.0.0.nupkg.sha512",
+    "C:\\Users\\Zhad9l\\.nuget\\packages\\tlschema\\1.1.0\\tlschema.1.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

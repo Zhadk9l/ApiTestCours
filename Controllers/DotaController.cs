@@ -53,12 +53,6 @@ public class DotaController : ControllerBase
         return League;
     }
 
-    [HttpGet("TeamsMatchesPast")]
-    public async Task<string> GetTeamsMatchesPast()
-    {
-        var MatchesPast = await _dotaClient.GetTeammatchesPast();
-        return MatchesPast;
-    }
 
     [HttpGet("TeamsMatchesLive")]
     public async Task<List<LiveMatches>> GetTeamsMatchesLive()
